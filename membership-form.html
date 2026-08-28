@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form - UNYBD</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-2">
+            <div class="flex items-center">
+                <img src="uddami logo.jpeg" alt="Logo" class="h-32">
+            </div>
+            <ul class="flex gap-8">
+                <li><a href="index.html" class="text-red-600 font-medium hover:text-red-700 transition">Home</a></li>
+                <li><a href="membership-form.html" class="text-red-600 font-medium hover:text-red-700 transition">Membership Form</a></li>
+                <li><a href="members.html" class="text-red-600 font-medium hover:text-red-700 transition">Members</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Membership Form Content -->
+    <div class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-8 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto">
+            <div class="bg-white rounded-xl md:rounded-2xl shadow-lg md:shadow-2xl p-6 md:p-10">
+                <div class="text-center mb-8 md:mb-10">
+                    <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-2 md:mb-3">Membership Application</h2>
+                    <p class="text-sm md:text-base text-gray-600">Join UNYBD and become part of our community</p>
+                    <div class="w-16 h-1 bg-red-600 mx-auto mt-3 md:mt-4 rounded-full"></div>
+                </div>
+                
+                <form class="space-y-4 md:space-y-6">
+                    <div>
+                        <label class="block text-sm md:text-base text-gray-800 font-semibold mb-2 md:mb-3">Full Name <span class="text-red-600">*</span></label>
+                        <input type="text" placeholder="Enter your full name" class="w-full px-3 md:px-5 py-2 md:py-3 text-sm md:text-base border-2 border-gray-200 rounded-lg focus:outline-none focus:border-red-600 transition bg-gray-50" required>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm md:text-base text-gray-800 font-semibold mb-2 md:mb-3">Email <span class="text-red-600">*</span></label>
+                        <input type="email" placeholder="Enter your email" class="w-full px-3 md:px-5 py-2 md:py-3 text-sm md:text-base border-2 border-gray-200 rounded-lg focus:outline-none focus:border-red-600 transition bg-gray-50" required>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm md:text-base text-gray-800 font-semibold mb-2 md:mb-3">Phone <span class="text-red-600">*</span></label>
+                        <input type="tel" placeholder="Enter your phone number" class="w-full px-3 md:px-5 py-2 md:py-3 text-sm md:text-base border-2 border-gray-200 rounded-lg focus:outline-none focus:border-red-600 transition bg-gray-50" required>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm md:text-base text-gray-800 font-semibold mb-2 md:mb-3">Institution <span class="text-red-600">*</span></label>
+                        <input type="text" placeholder="Enter your institution/school/college" class="w-full px-3 md:px-5 py-2 md:py-3 text-sm md:text-base border-2 border-gray-200 rounded-lg focus:outline-none focus:border-red-600 transition bg-gray-50" required>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm md:text-base text-gray-800 font-semibold mb-2 md:mb-3">Class <span class="text-red-600">*</span></label>
+                        <select class="w-full px-3 md:px-5 py-2 md:py-3 text-sm md:text-base border-2 border-gray-200 rounded-lg focus:outline-none focus:border-red-600 transition bg-gray-50" required>
+                            <option value="">Select your class</option>
+                            <option value="6">Class 6</option>
+                            <option value="7">Class 7</option>
+                            <option value="8">Class 8</option>
+                            <option value="9">Class 9</option>
+                            <option value="10">Class 10</option>
+                            <option value="11">Class 11</option>
+                            <option value="12">Class 12</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm md:text-base text-gray-800 font-semibold mb-2 md:mb-3">Address</label>
+                        <textarea placeholder="Enter your address" class="w-full px-3 md:px-5 py-2 md:py-3 text-sm md:text-base border-2 border-gray-200 rounded-lg focus:outline-none focus:border-red-600 transition bg-gray-50" rows="3" md:rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white font-bold py-3 md:py-4 text-sm md:text-base rounded-lg hover:from-red-700 hover:to-red-800 transition shadow-lg mt-6 md:mt-8">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
