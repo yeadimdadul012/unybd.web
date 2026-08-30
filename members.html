@@ -6,39 +6,36 @@
     <title>Members - UNYBD</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
-        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-2">
+        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-3 sm:flex-row sm:px-6 lg:px-8">
             <div class="flex items-center">
-                <img src="uddami logo.jpeg" alt="Logo" class="h-32">
+                <img src="uddami logo.jpeg" alt="Logo" class="h-20 sm:h-24 md:h-28 lg:h-32">
             </div>
-            <ul class="flex gap-8">
-                <li><a href="index.html" class="text-red-600 font-medium hover:text-red-700 transition">Home</a></li>
-                <li><a href="membership-form.html" class="text-red-600 font-medium hover:text-red-700 transition">Membership Form</a></li>
-                <li><a href="members.html" class="text-red-600 font-medium hover:text-red-700 transition">Members</a></li>
+            <ul class="flex w-full flex-col items-center gap-2 text-center sm:w-auto sm:flex-row sm:gap-5 md:gap-8">
+                <li><a href="index.html" class="block rounded px-2 py-1 text-sm font-medium text-red-600 transition hover:text-red-700 sm:text-base">Home</a></li>
+                <li><a href="membership-form.html" class="block rounded px-2 py-1 text-sm font-medium text-red-600 transition hover:text-red-700 sm:text-base">Membership Form</a></li>
+                <li><a href="members.html" class="block rounded px-2 py-1 text-sm font-medium text-red-600 transition hover:text-red-700 sm:text-base">Members</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Members Content -->
-    <div class="min-h-screen bg-gray-50 py-12 px-4">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Our Members</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Founder Card -->
-                <div class="bg-white rounded-lg shadow-md p-6 lg:col-span-1">
+    <div class="min-h-screen bg-gray-50 px-4 py-12 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+            <h2 class="mb-8 text-center text-3xl font-bold text-gray-800 sm:text-4xl">Our Members</h2>
+
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <div class="rounded-lg bg-white p-6 shadow-md lg:col-span-1">
                     <div class="flex flex-col items-center">
-                        <img src="sifat vai.jpeg" alt="Yassin Arafat Sifat" class="w-32 h-40 rounded-lg object-cover mb-4">
-                        <h3 class="text-xl font-bold text-gray-800 text-center">Yassin Arafat Sifat</h3>
-                        <p class="text-red-600 font-semibold text-sm text-center mt-2">Founder & Chairman</p>
-                        <p class="text-gray-600 text-xs text-center mt-2">Leading the vision and mission of UNYBD</p>
-                        <p class="text-blue-600 text-sm font-medium mt-3">Member since 2024</p>
+                        <img src="sifat vai.jpeg" alt="Yassin Arafat Sifat" class="mb-4 h-40 w-32 rounded-lg object-cover">
+                        <h3 class="text-center text-xl font-bold text-gray-800">Yassin Arafat Sifat</h3>
+                        <p class="mt-2 text-center text-sm font-semibold text-red-600">Founder & Chairman</p>
+                        <p class="mt-2 text-center text-xs text-gray-600">Leading the vision and mission of UNYBD</p>
+                        <p class="mt-3 text-sm font-medium text-blue-600">Member since 2024</p>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
